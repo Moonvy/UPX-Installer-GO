@@ -1,0 +1,13 @@
+# Build output and development app.
+/build/
+/.mygo/
+mygo_windows_*.syso
+
+# There are no JavaScript dependencies, but npm may create an empty tree.
+/node_modules/
+
+# Signing keys: the private key must never be committed.
+/secret/
+.env
+
+.DS_Store

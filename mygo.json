@@ -1,0 +1,16 @@
+{
+  "name": "OpenUXP Installer",
+  "identifier": "io.openuxp.installer",
+  "version": "1.0.5",
+  "copyright": "© OpenUXP Contributors",
+  "out": "build",
+  "updates": {
+    "publicKey": "dIemmdFPR1fbnckmOJCQCoLgtwOtTTFdoOv/F2a8miM=",
+    "privateKey": "secret/mygo-update.key",
+    "github": "yArna/UPX-Installer-GO",
+    "changelog": "CHANGELOG.md"
+  },
+  "macos": {
+    "minimumSystemVersion": "12.0"
+  }
+}

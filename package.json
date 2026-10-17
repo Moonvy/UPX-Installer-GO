@@ -1,0 +1,22 @@
+{
+  "name": "openuxp-installer",
+  "private": true,
+  "description": "Adobe 插件安装器，界面为 MyGo 原生界面。这里的脚本只是 MyGo 与 Go 命令的快捷方式，没有任何 Node 依赖。",
+  "homepage": "https://github.com/yArna/OpenUPX-Installer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yArna/OpenUPX-Installer.git"
+  },
+  "scripts": {
+    "dev": "go tool mygo dev",
+    "build": "go tool mygo build",
+    "build:macos": "go tool mygo build -platform darwin/universal",
+    "build:windows": "go tool mygo build -platform windows/amd64",
+    "test": "go test ./...",
+    "check": "go vet ./...",
+    "format": "gofmt -w .",
+    "screens": "OPENUXP_RENDER_DIR=build/screens go test -run TestRenderScreens",
+    "doctor": "go tool mygo doctor",
+    "release": "go tool mygo build -platform darwin/universal,windows/amd64 -upload"
+  }
+}
